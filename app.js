@@ -16,7 +16,15 @@ const navButtons = document.querySelectorAll('.nav .tooltip');
 const contentDivs = document.querySelectorAll('.content > div');
 
 
+const stopwatchDisplay = document.getElementById('stopwatch');
+const startBtn = document.getElementById('startBtn');
+const stopBtn = document.getElementById('stopBtn');
+const resetBtn = document.getElementById('resetBtn');
+
 const alarms = [];
+let stopwatchInterval; 
+let elapsedTime = 0; 
+
 
 function updateClock() {
     const now = new Date();
@@ -142,14 +150,6 @@ navButtons.forEach((button, index) => {
 
 
 
-
-let stopwatchInterval; 
-let elapsedTime = 0; 
-
-const stopwatchDisplay = document.getElementById('stopwatch');
-const startBtn = document.getElementById('startBtn');
-const stopBtn = document.getElementById('stopBtn');
-const resetBtn = document.getElementById('resetBtn');
 
 function updateStopwatchDisplay() {
     const hours = Math.floor(elapsedTime / 3600).toString().padStart(2, '0');
