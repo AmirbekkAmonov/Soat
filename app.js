@@ -68,7 +68,7 @@ function renderAlarms() {
 
         const alarmInfo = alarm.enabled
             ? `Qoldiq vaqt: ${hoursLeft} Soat ${minutesLeft} minut ${secondsLeft} sekund`
-            : 'Not active';
+            : 'Faol emas';
 
         alarmDiv.innerHTML = `
             <div>
