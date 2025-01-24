@@ -52,7 +52,7 @@ body {
             bottom: 0;
             background-color: rgb(176, 166, 253);
         }
-
+        
         .tooltip {
             position: relative;
             cursor: pointer;
@@ -144,12 +144,13 @@ body {
                 border-radius: 5px;
             }
         }
+        
         .tooltip.active {
             background-color: #5fda63 !important; 
             color: white;
             border-radius: 5px;
         }
-
+        
         .tooltip:hover .tooltip-text {
             visibility: visible;
         }
@@ -450,6 +451,7 @@ body {
             text-align: center;
             margin: 20px;
             h1 {
+                color: #ffffffd4;
                 font-size: 5rem;
                 margin-bottom: 20px;
                 @media (max-width: 340px) {

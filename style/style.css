@@ -437,6 +437,7 @@ body {
   margin: 20px;
 }
 .section .content .sekundamer h1 {
+  color: rgba(255, 255, 255, 0.831372549);
   font-size: 5rem;
   margin-bottom: 20px;
 }
